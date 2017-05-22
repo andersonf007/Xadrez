@@ -7,9 +7,10 @@
 //$(document).ready(function(){
     $(function(){
           $('.drag').draggable({revert:'invalid'},{scope:"cacete"});
-             $('#a3').droppable({scope:'cacete'},{revert:'fit'});
-          
-          montaGrid();
+            montaGrid();
+             $('.tab').droppable({scope:'cacete'},{revert:'fit'});
+       
+        
     });
 //});
 
