@@ -1,0 +1,20 @@
+/*
+@keyframes moverRei_1 {
+    
+    from { 
+      position: absolute;
+      top: 30%;
+      left: 20%
+     }
+
+    to {
+      top: 30%;
+      left: 50%;
+    }
+
+}
+
+#rei_1 {
+	animation-name: moverRei_1;
+	animation-duration: 6s;
+}*/

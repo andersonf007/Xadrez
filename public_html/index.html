@@ -9,63 +9,68 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='jquery-1.11.3.js' ></script>
-        <script src='jquery-ui.js' ></script>
-      <link rel="stylesheet" href="jquery-ui.css"/>
-        <script src='script.js' ></script>
-        <style>
 
-             .drag {
-                 width: 80px;
-                 height: 80px;
-                 border: 1px solid black;
-                 position: absolute;
-                 top: 580px;
-                 left: 632px;
-                 border-radius: 40px;
-                 cursor: move;
-            } .ui-draggable{
-                background: firebrick;
-            }
-            .ui-draggable-dragging{
-                background: blue;
-            }
-
-            button {
-                position: absolute;
-                cursor: pointer;
-                padding: 5px;
-                color: white;
-                left: 5%;
-                top: 2%;
-                background: blue;
-                border-radius: 5px;
-            }
-            button:hover {
-                position: absolute;
-                cursor: pointer;
-                padding: 5px;
-                color: white;
-                left: 5%;
-                top: 2%;
-                background: green;
-                border-radius: 5px;
-            }
-
-            p {
-                color: #CCC;
-                text-align: center;
-                padding-top: 20%;
-            }
-            
-        </style>
+         <!-- CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+        <link rel='stylesheet' href="css/estilo.css">
+        <link rel='stylesheet' href="css/animations.css">
+        
+        <!-- Java Script -->
+        <script src='js/jquery-1.11.3.js'></script>
+        <script src='js/jquery-ui.js' ></script>
+        <script src='js/script.js' ></script>
+        <script type="text/javascript" src='js/posicoes.js'></script>
+       
     </head>
     <body>
         
-        <div id='tabuleiro' style="width: 656px; margin-top: 22%; margin-left: 15%; transform: rotate(-90deg);"></div>
+        <div id='tabuleiro' style="width: 656px; height: 656px; margin: 0 auto; transform: rotate(-90deg);"></div>
 
-        <div class='drag'></div> 
+        <!-- CRIANDO PEÕES -->
+        <div class='peao_1 drag' id="peao_1_1">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_2">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_3">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_4">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_5">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_6">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_7">PEÃO 1</div>
+        <div class='peao_1 drag' id="peao_1_8">PEÃO 1</div>
 
+        <div class='peao_2 drag' id='peao_2_1'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_2'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_3'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_4'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_5'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_6'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_7'>PEÃO 2</div>
+        <div class='peao_2 drag' id='peao_2_8'>PEÃO 2</div>
+        
+        <!-- CRIANDO TORRES -->
+        <div class="drag torre_1" id="torre_1_1">torre 1</div>
+        <div class="drag torre_1" id="torre_1_2">torre 1</div>
+        <div class="drag torre_2" id="torre_2_1">torre 2</div>
+        <div class="drag torre_2" id="torre_2_2">torre 2</div>
+         
+        <!-- CRIANDO CAVALO -->
+        <div class="drag cavalo_1" id="cavalo_1_1">cavalo 1</div>
+        <div class="drag cavalo_1" id="cavalo_1_2">cavalo 1</div>
+        <div class="drag cavalo_2" id="cavalo_2_1">cavalo 2</div>
+        <div class="drag cavalo_2" id="cavalo_2_2">cavalo 2</div>
+        
+        <!-- CRIANDO BISPO -->
+        <div class="drag bispo_1" id="bispo_1_1">bispo 1</div>
+        <div class="drag bispo_1" id="bispo_1_2">bispo 1</div>
+        <div class="drag bispo_2" id="bispo_2_1">bispo 2</div>
+        <div class="drag bispo_2" id="bispo_2_2">bispo 2</div>
+        
+        <!-- CRIANDO RAINHA -->
+        <div class="drag rainha_1" id="rainha_1">rainha 1</div>
+        <div class="drag rainha_2" id="rainha_2">rainha 1</div>
+        
+        <!-- CRIANDO REI -->
+        <div class="drag rei_1" id="rei_1">rei 1</div>
+        <div class="drag rei_2" id="rei_2">rei 2</div>
+        
         <button type="button" id="toggle">Esconder Guias</button>
     </body>
 </html>
