@@ -8,7 +8,7 @@
           $('.tab').droppable({scope:'cacete'},{revert:'fit'},{accept: '.drag'});
           $('.tab').droppable({ drop: function( event, ui ) { 
 
-            //alert('Olá Você está em -> '+$(this).attr('id'));
+            alert('Olá Você está em -> '+$(this).attr('id'));
         
 
             }

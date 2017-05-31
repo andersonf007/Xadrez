@@ -1,3 +1,4 @@
+
     var tabuleiro = new Array(8);
     var rainhas = new Array(2);
     var reis = new Array(2);
